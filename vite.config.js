@@ -7,7 +7,7 @@ const dirname = path.resolve();
 export default defineConfig({
   root: "docs",
   publicDir: "../public",
-  base: "../docs",
+  base: "/threejs-font-experiment/docs",
   build: {
     outDir: "../dist",
     emptyOutDir: true,
