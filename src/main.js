@@ -1,6 +1,13 @@
 import "./style.scss";
 import javascriptLogo from "../public/javascript.svg";
 import { setupCounter } from "./counter.js";
+import Experience from "./Experience/Experience.js";
+import Sketch from "./Sketch/Sketch.js";
+
+// const experience = new Experience({
+//   targetElement: document.querySelector(".experience"),
+// });
+// experience.init();
 
 document.querySelector("#app").innerHTML = `
   <div>
@@ -21,3 +28,8 @@ document.querySelector("#app").innerHTML = `
 `;
 
 setupCounter(document.querySelector("#counter"));
+
+const sketch = new Sketch({
+  targetElement: document.querySelector(".sketch"),
+});
+sketch.init();

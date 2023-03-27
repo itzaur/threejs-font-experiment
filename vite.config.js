@@ -1,5 +1,6 @@
 import { defineConfig } from "vite";
 import path from "path";
+import glsl from "vite-plugin-glsl";
 
 const dirname = path.resolve();
 
@@ -11,4 +12,5 @@ export default defineConfig({
     emptyOutDir: true,
     sourcemap: true,
   },
+  plugins: [glsl()],
 });
