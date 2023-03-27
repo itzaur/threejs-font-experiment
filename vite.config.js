@@ -5,7 +5,7 @@ import glsl from "vite-plugin-glsl";
 const dirname = path.resolve();
 
 export default defineConfig({
-  root: "src",
+  root: "docs",
   publicDir: "../public",
   build: {
     outDir: "../dist",
